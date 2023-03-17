@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato&display=swap");
+#leftSideSection {
+  width: 250px;
+  height: 550px;
+  margin-left: 70px;
+  margin-top: 90px;
+}
+#leftSideSection h3 {
+  margin: 40px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: "Abril Fatface", cursive;
+}
+#leftSideSection a {
+  display: block;
+  text-decoration: none;
+  margin: 40px;
+  color: grey;
+}
+#leftSideSection button {
+  margin-left: 30px;
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#leftSideSection button:hover {
+  padding-right: 25px;
+  box-shadow: 0px 15px 25px -5px rgba(darken(dodgerblue, 40%)) transform scale(1.03);
+}
+#leftSideSection button:active {
+  background-color: rgba(240, 95, 95, 0.8);
+}
+#app {
+  display: flex;
+}
+#main {
+  width: 70%;
+  height: 100%;
+  margin-top: 120px;
+  display: flex;
+  position: relative;
+}
+#mainLeft {
+  font-size: 29px;
+  width: 650px;
+}
+#mainLeft h1 {
+  font-family: "Abril Fatface", cursive;
+  font-weight: normal;
+}
+#mainRight {
+  color: grey;
+  width: 450px;
+  margin-right: 60px;
+  padding: 50px;
+}
+#line {
+  height: 2.5px;
+  width: 70px;
+  background-color: orange;
+}
+#foodItems {
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 10%;
+  height: 250px;
+  width: 1000px;
+  overflow: auto;
+  display: flex;
+}
+.itemImg img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+.itemImg {
+  box-shadow: 2px 2px 20px 1px grey;
+  border-radius: 20px;
+  padding: 25px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s;
+  font-family: "Abril Fatface", cursive;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+}
+.itemImg:hover {
+  transform: translateY(-10px);
+}
+#icon {
+  display: none;
+}
+#icon img {
+  width: 30px;
+  height: 30px;
+}
+#searchBox{
+  width: 50%;
+  top: -70px;
+  left: 20%;
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 30px;
+  height: 30px;
+  padding: 5px;
+}
+#searchIcon{
+  background: none;
+  border: none;
+  margin-top: -60px;
+  margin-left: 66%;
+  position: absolute;
+  cursor: pointer;
+}
+#searchIcon img{
+  width: 20px;
+  height: 20px;
+}
+@media screen and (max-width: 935px) {
+  #leftSideSection {
+    display: none;
+  }
+  #searchBox{
+    top: -30px;
+    left: 200px;
+  }
+  #searchIcon{
+    margin-top: -4%;
+    margin-left: 85%;
+  }
+  #icon {
+    display: block;
+    width: 90%;
+    position: absolute;
+    padding: 10px;
+    height: 50px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  #expandBar a{
+    display: block;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 15px;
+    transition: 0.5s;
+    color: grey;
+  }
+  #icon button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  #cart img {
+    height: 30px;
+    width: 50px;
+  }
+  #mainRight {
+    display: none;
+  }
+  #mainLeft {
+    position: absolute;
+    font-size: 25px;
+    width: 90%;
+    margin-left: 140px;
+  }
+  #icon h3 {
+    font-size: 35px;
+    font-family: "Abril Fatface", cursive;
+    letter-spacing: 2.5px;
+    margin-top: 0px;
+  }
+  .last {
+    display: none;
+  }
+  #foodItems{
+    width: 560px;
+  }
+}
+@media screen and (max-width: 665px) {
+  #searchIcon{
+    margin-left: 80%;
+  }
+}
+@media screen and (max-width: 892px) {
+  #searchIcon{
+    margin-left: 77%;
+  }
+ 
+}
+@media screen and (max-width: 595px) {
+  #searchIcon{
+    margin-left: 90%;
+  }
+}
